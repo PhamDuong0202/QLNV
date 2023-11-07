@@ -1,0 +1,20 @@
+﻿@model DE01.Models.tblUser
+
+@using (Html.BeginForm())
+{
+    <p>
+        <label>Tên Đăng Nhập</label>
+        <input type="text" name="username" />
+    </p>
+    <p>
+        <label>Mật khẩu</label>
+        <input type="password" name="password" />
+    </p>
+    <p>
+        <input type="submit" value="Login" />
+    </p>
+}
+<div>
+    @ViewBag.errMsg
+</div>
+
